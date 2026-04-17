@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimoruCode | Development & Security</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-red: #A82D1F;
+            --brand-cream: #F2E5C9;
+            --brand-black: #0D0D0D;
+        }
+        body {
+            background-color: var(--brand-black);
+            color: var(--brand-cream);
+            font-family: 'Outfit', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .mono { font-family: 'Fira Code', monospace; }
+        
+        /* Logo dinámico fiel a tu imagen */
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 0.8;
+        }
+        .logo-symbol {
+            color: var(--brand-cream);
+            font-size: 5rem;
+            font-weight: 900;
+            letter-spacing: -5px;
+            margin-bottom: 10px;
+        }
+        .logo-text-top {
+            color: var(--brand-red);
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        .logo-text-bottom {
+            color: var(--brand-cream);
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .spiral {
+            color: var(--brand-red);
+            display: inline-block;
+            transform: scale(1.2);
+            margin: 0 -2px;
+        }
+
+        .bg-card { background-color: #161616; }
+        .border-brand { border-color: var(--brand-red); }
+        .text-brand-red { color: var(--brand-red); }
+        
+        .nav-link:hover { color: var(--brand-red); border-bottom: 2px solid var(--brand-red); }
+    </style>
+</head>
+
+<body class="antialiased">
+    <Routes />
+    <script src="@Assets["_framework/blazor.web.js"]"></script>
+</body>
+
+</html>

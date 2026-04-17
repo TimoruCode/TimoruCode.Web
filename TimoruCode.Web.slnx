@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TimoruCode.Web/TimoruCode.Web.Client/TimoruCode.Web.Client.csproj" />
+  <Project Path="TimoruCode.Web/TimoruCode.Web/TimoruCode.Web.csproj" />
+</Solution>

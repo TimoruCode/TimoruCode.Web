@@ -1,0 +1,103 @@
+﻿@page "/"
+
+<section id="inicio" class="min-h-screen flex flex-col items-center justify-center pt-20 px-6">
+    <div class="logo-container mb-12 transform scale-75 md:scale-100">
+        <div class="logo-symbol">&lt;/&gt;</div>
+        <div class="logo-text-top uppercase">TIMORU</div>
+        <div class="logo-text-bottom uppercase tracking-[0.2em]">
+            C<span class="spiral">O</span>DE
+        </div>
+    </div>
+        
+    <div class="text-center max-w-3xl">
+        <p class="mono text-brand-red text-sm mb-6 tracking-[0.3em] uppercase animate-pulse">
+            > Control is an illusion. Code is reality.
+        </p>
+        <h2 class="text-3xl md:text-5xl font-black mb-8 leading-tight">
+            No solo escribimos código, <br>
+            <span class="bg-brand-red px-2 text-white">hackeamos el futuro.</span>
+        </h2>
+        <a href="#servicios" class="inline-block border-2 border-brand text-brand-red px-10 py-4 font-bold hover:bg-brand-red hover:text-white transition-all duration-300 mono">
+            EXPLORAR_SISTEMA.exe
+        </a>
+    </div>
+</section>
+
+<section id="servicios" class="py-24 px-6 bg-card">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+            <h2 class="text-brand-red font-black text-4xl mb-2">QUÉ_HACEMOS</h2>
+            <div class="h-1 w-20 bg-brand-red"></div>
+        </div>
+            
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 border border-white/5 hover:border-brand/50 transition-all bg-black/40 group">
+                <MudIcon class="mb-6"><svg class="w-12 h-12 text-brand-red group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></MudIcon>
+                <h3 class="text-xl font-bold mb-4">Software Architecture</h3>
+                <p class="opacity-60 text-sm leading-relaxed">Sistemas robustos diseñados bajo la disciplina Shinobi. Código limpio que resiste cualquier asalto.</p>
+            </div>
+
+            <div class="p-8 border border-white/5 hover:border-brand/50 transition-all bg-black/40 group">
+                <MudIcon class="mb-6"><svg class="w-12 h-12 text-brand-red group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></MudIcon>
+                <h3 class="text-xl font-bold mb-4">Cybersecurity</h3>
+                <p class="opacity-60 text-sm leading-relaxed">Protegemos tu realidad digital. Implementamos defensas impenetrables inspiradas en Fsociety.</p>
+            </div>
+
+            <div class="p-8 border border-white/5 hover:border-brand/50 transition-all bg-black/40 group">
+                <MudIcon class="mb-6"><svg class="w-12 h-12 text-brand-red group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg></MudIcon>
+                <h3 class="text-xl font-bold mb-4">UI/UX Flow</h3>
+                <p class="opacity-60 text-sm leading-relaxed">Diseños con el ritmo de Avicii. Interfaces fluidas que armonizan la estética con la funcionalidad total.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="nosotros" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-brand-red font-black text-4xl mb-6 uppercase">La_Filosofía</h2>
+            <p class="mb-6 opacity-80 leading-relaxed">
+                En <span class="text-brand-red font-bold font-mono">TimoruCode</span> no somos una empresa de desarrollo común. Nacimos en la intersección del hacking ético y el arte digital.
+            </p>
+            <div class="space-y-4 mono text-sm">
+                <div class="flex items-center space-x-3">
+                    <span class="text-brand-red font-bold">>></span>
+                    <span>Resiliencia de un Ninja.</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-brand-red font-bold">>></span>
+                    <span>Estrategia de un Hacker.</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-brand-red font-bold">>></span>
+                    <span>Pasión de un Artista.</span>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="absolute -top-4 -left-4 w-full h-full border-2 border-brand opacity-20"></div>
+            <div class="bg-white/5 p-12 text-center border border-white/10">
+                <span class="text-6xl mb-6 block">◢◤</span>
+                <p class="italic opacity-60">"One day you'll leave this world behind, so live a life you will remember."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="py-24 px-6 bg-card border-t border-brand/20">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-center text-4xl font-black mb-12">INICIAR_PROYECTO</h2>
+        <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="NOMBRE_USUARIO" class="bg-black border border-white/20 p-4 mono text-xs focus:border-brand outline-none transition-all">
+                <input type="email" placeholder="EMAIL_CORREO" class="bg-black border border-white/20 p-4 mono text-xs focus:border-brand outline-none transition-all">
+            </div>
+            <textarea rows="4" placeholder="DESCRIBE_EL_OBJETIVO..." class="w-full bg-black border border-white/20 p-4 mono text-xs focus:border-brand outline-none transition-all"></textarea>
+            <button class="w-full bg-brand-red text-white py-4 font-black uppercase tracking-widest hover:brightness-125 transition-all">
+                ENVIAR_DATOS_
+            </button>
+        </form>
+    </div>
+</section>
+
+  

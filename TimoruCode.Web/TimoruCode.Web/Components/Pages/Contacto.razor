@@ -1,0 +1,34 @@
+﻿@page "/contacto"
+
+<section class="py-32 px-6 bg-[#161616] min-h-screen">
+    <div class="max-w-3xl mx-auto border-t border-[#A82D1F]/20 pt-10">
+        <h2 class="text-center text-4xl font-black mb-12 uppercase">INICIAR_PROYECTO</h2>
+        <EditForm Model="@contactoModel" OnValidSubmit="HandleSubmit" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <InputText @bind-Value="contactoModel.Nombre" placeholder="NOMBRE_USUARIO" class="bg-black border border-white/20 p-4 font-['Fira_Code'] text-xs focus:border-[#A82D1F] outline-none transition-all text-[#F2E5C9]" />
+                <InputText @bind-Value="contactoModel.Email" placeholder="EMAIL_CORREO" class="bg-black border border-white/20 p-4 font-['Fira_Code'] text-xs focus:border-[#A82D1F] outline-none transition-all text-[#F2E5C9]" />
+            </div>
+            <InputTextArea @bind-Value="contactoModel.Mensaje" rows="4" placeholder="DESCRIBE_EL_OBJETIVO..." class="w-full bg-black border border-white/20 p-4 font-['Fira_Code'] text-xs focus:border-[#A82D1F] outline-none transition-all text-[#F2E5C9]" />
+            <button type="submit" class="w-full bg-[#A82D1F] text-white py-4 font-black uppercase tracking-widest hover:brightness-125 transition-all">
+                ENVIAR_DATOS_
+            </button>
+        </EditForm>
+    </div>
+</section>
+
+@code {
+    private Contactos contactoModel = new();
+
+    private void HandleSubmit()
+    {
+        // Aquí iría tu lógica de envío (Azure Functions, Web API, etc.)
+        Console.WriteLine($"Datos enviados: {contactoModel.Nombre}");
+    }
+
+    public class Contactos
+    {
+        public string Nombre { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Mensaje { get; set; } = "";
+    }
+}

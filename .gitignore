@@ -1,0 +1,14 @@
+# Visual Studio archivos de usuario y temporales
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de publicación
+http/
+publish/
+
+# Archivos de configuración local (evita subir secretos)
+appsettings.Development.json

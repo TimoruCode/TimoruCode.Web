@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+
+<nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+            <span class="text-brand-red font-black text-2xl">&lt;/&gt;</span>
+            <span class="font-bold tracking-tighter text-lg">TIMORU<span class="text-brand-red">CODE</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8 mono text-xs">
+            <a href="#inicio" class="nav-link">01_INICIO</a>
+            <a href="#servicios" class="nav-link">02_SERVICIOS</a>
+            <a href="#nosotros" class="nav-link">03_NOSOTROS</a>
+            <a href="#contacto" class="nav-link">04_CONTACTO</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    @Body
+</main>
+
+<footer class="py-12 px-6 text-center mono text-[10px] opacity-30 tracking-[0.5em]">
+    TIMORUCODE // SYSTEM_VERSION_1.0.4 // EL_SALVADOR <br>
+    ALL_RIGHTS_RESERVED // 2024
+</footer>
+
+@code {
+    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
+}
